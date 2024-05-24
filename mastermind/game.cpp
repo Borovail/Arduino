@@ -33,7 +33,7 @@ Game create_game(const char *secret) {
   return game;
 }
 
-void check_guess(Game &game) {
+static void check_guess(Game &game) {
   Log.trace("Checking guess with guess: %s, attempts: %d, history_index: %d", game.guess, game.attempts, game.history_index);
   strcpy(game.history[game.attempts], game.guess);
   game.attempts++;
@@ -98,7 +98,7 @@ void player_turn(Game &game) {
   Log.trace("Player turn ended");
 }
 
-void play_game(Game &game) {
+static void play_game(Game &game) {
   Log.trace("Playing game with guess: %s, attempts: %d, history_index: %d", game.guess, game.attempts, game.history_index);
   lcd_display_welcome_message();
   lcd_display_guess(game.guess);
