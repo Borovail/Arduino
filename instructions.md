@@ -14,7 +14,7 @@
 1. **Connect the hardware**:
    - Follow the wiring diagram to connect your components to the Arduino board.
    
-   ![Mastermind Schematic](schematic.png)
+   ![Mastermind Schematic](mastermind-schematic.png)
    Note: The diagram shows a basic version with buttons. This implementation uses a joystick instead of 5 buttons and includes an optional buzzer for sound feedback.
 
 2. **Upload the code**:
